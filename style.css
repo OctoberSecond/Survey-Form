@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #03f5fd), url("new-york1.jpg");
+    background: url("new-york1.jpg") center center/cover no-repeat;
+    text-shadow: 0.5px 0.5px rgb(200, 245, 1);
+    color: rgb(225, 18, 18);
+    font-weight: bold;
+}
+
+
+
+#title {
+    text-align: center;
+    font-size: 64px;
+    margin-top: 30px;
+    font-family: monospace;
+}
+
+#description {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+    color: white;
+}
+
+#survey-form {
+    margin-left: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#survey-form div {
+    margin-top: 60px;
+}
+
+.list-items {
+    list-style: none;
+}
+.input-elm {
+    width: 50%;
+    height: 32px;
+    margin-top: 16px;
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #7fbf7f;
+}
+
+.input-radio, .input-checkbox {
+    width: 32px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+
+.select-elm {
+    height: 32px;
+    width: 50%;
+    padding-left: 10px;
+    margin-top: 16px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #7fbf7f;
+}
+
+.textarea-elm {
+    height: 156px;
+    width: 50%;
+    margin-top: 16px;
+    padding-top: 10px;
+    border: 2px dotted #ffffff;
+    border-radius: 5px;
+
+}
+
+.buttom-elm {
+    height: 50px;
+    width: 50%;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: greenyellow;
+}

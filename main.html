@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+        Please fill this form with all the necessary fields marked with *
+to let us know the courses you are interested in. You may choose multiple courses.
+    </p>
+
+    <form id="survey-form">
+
+        <div>
+            <label id="name-label" for="name">Name</label><br>
+            <input class="input-elm" type="text" id="name" placeholder="Your Full Name" required>
+            
+        </div>
+
+        <div>
+            <label for="email">Email</label><br>
+            <input class="input-elm" type="email" name="email" id="email" placeholder="Your Email ID" required>
+        </div>
+
+        <div>
+            <label for="number" id="number-label">Age</label><br>
+            <input class="input-elm" type="number" name="age" id="number" max="40" min="18" placeholder="Your Age">
+        </div>
+
+
+        <div>
+            <label for="dropdown">Which one of these best describes your occupation?</label><br>
+            <select class="select-elm" name="occupation" id="dropdown">
+            <option value="full_time_job">Full-time Job</option>
+            <option value="part_time_job">Part-time Job</option>
+            <option value="freelancer">Freelancer</option>
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+            <option value="no_say">Prefer not to say</option>
+            </select>
+        </div>
+
+
+        <div>How likely are you to enroll with us ?</div>
+        <ul>
+            <li class="list-items"> 
+                <input class="input-elm input-radio" type="radio" name="likely" value="1" id="radio-1"> 
+                <label for="radio-1">Extremely likely</label> 
+            </li>
+
+            <li class="list-items"> 
+                <input class="input-elm input-radio" type="radio" name="likely" value="2" id="radio-2"> 
+                <label for="radio-1">Very likely</label> 
+            </li>
+
+            <li class="list-items"> 
+                <input class="input-elm input-radio" type="radio" name="likely" value="3" id="radio-3"> 
+                <label for="radio-1">likely</label> 
+            </li>
+
+            <li class="list-items"> 
+                <input class="input-elm input-radio" type="radio" name="likely" value="4" id="radio-4"> 
+                <label for="radio-1">Unlikely</label> 
+            </li>
+
+           
+        </ul>
+
+        <div>What courses would you like to enroll in ?</div>
+        <ul>
+            <li class="list-items">
+                <input class="input-elm input-checkbox" type="checkbox" value="Android" id="checkbox-1">
+                <label for="checkbox-1">Android App Development</label>
+            </li>
+
+            <li class="list-items">
+                <input class="input-elm input-checkbox" type="checkbox" value="Web-Design" id="checkbox-2">
+                <label for="checkbox-2">Web Design & Development</label>
+            </li>
+
+            <li class="list-items">
+                <input class="input-elm input-checkbox" type="checkbox" value="js" id="checkbox-3">
+                <label for="checkbox-3">JavaScript</label>
+            </li>
+
+            <li class="list-items">
+                <input class="input-elm input-checkbox" type="checkbox" value="Advance-Python" id="checkbox-4">
+                <label for="checkbox-4">Advance Python</label>
+            </li>
+
+            <li class="list-items">
+                <input class="input-elm input-checkbox" type="checkbox" value="Machine-Learning" id="checkbox-5">
+                <label for="checkbox-5">Machine Learning</label>
+            </li>
+
+            <li class="list-items">
+                <input class="input-elm input-checkbox" type="checkbox" value="AI" id="checkbox-6">
+                <label for="checkbox-6">Artificial Intelligence</label>
+            </li>
+
+            <li class="list-items">
+                <input class="input-elm input-checkbox" type="checkbox" value="Data-Vis" id="checkbox-7">
+                <label for="checkbox-7">Data Visualization</label>
+            </li>
+        </ul>
+
+        <!--Text Area-->
+        <div>
+            <label for="more-spec">Any other specification you would like to mention :</label><br>
+            <textarea class="textarea-elm" name="textarea-elm" id="more-spec"></textarea>
+
+            <button class="buttom-elm" type="submit" id="submit">Submit Form</button>
+        </div>
+
+        
+
+    </form>
+</body>
+</html>
